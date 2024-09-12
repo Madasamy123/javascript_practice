@@ -1,3 +1,5 @@
 let firstName="john";
 let lastName="Doe";
-console.log(`Hello, ${firstName} ${lastName}!`);
+function Name(){
+console.log(`Hello, ${firstName} ${lastName}!`);}
+Name()
