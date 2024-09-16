@@ -2,15 +2,22 @@
 //adds it to a sum until the user enters a number greater than 100. Use a while loop to keep track of the 
 //input and sum.
 
-function sumOfNumber(n){
-    let i=1;
-    let sum=0;
-    while(i<=100){
+// function sumOfNumber(n){
+//     let i=1;
+//     let sum=0;
+//     while(i<=100){
        
-        sum=sum+i;
-        i++;
-    }
-    console.log(sum);
-}
-sumOfNumber(100)
+//         sum=sum+i;
+//         i++;
+//     }
+//     console.log(sum);
+// }
+// sumOfNumber(100)
 
+function sumOfNumber(n){
+    for(i=1;i<=n;i++){
+    
+        
+    }
+    
+}sumOfNumber(100)

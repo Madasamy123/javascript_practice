@@ -8,11 +8,18 @@
 //5 * 2 = 10
 //5 * 1 = 5
 
-function printMultiplicationTable(n,r){
-    let i=1;
-    while(r>=1){
-        console.log(r+"*"+n+"="+r*5);
-        r--;
-    }
+// function printMultiplicationTable(n,r){
+//     let i=1;
+//     while(r>=1){
+//         console.log(r+"*"+n+"="+r*5);
+//         r--;
+//     }
 
-}printMultiplicationTable(5,6)
+// }printMultiplicationTable(5,6)
+
+function prinMUltiplicationTable(n,r){
+    for(i=1;i<=n;i++){
+        let total=i*n;
+        console.log(total)
+    }
+}prinMUltiplicationTable(10,5)
