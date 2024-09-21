@@ -1,14 +1,10 @@
-let number= 12345;
+let number=7547399;
 let sum=0;
 while(number>0){
-   let a=number%10;//5
-    sum=sum+a;//5
-    number=parseInt(number/10)//1234
-   
-    console.log(sum);
-
-    
-}
+    let a=number%10;
+     sum=sum+a;
+     number=parseInt(number/10);
+}console.log(sum)
 
 
 

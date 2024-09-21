@@ -4,4 +4,4 @@
 let num=[1,2,3,4,5,9]
 let a=num.length-1;
 let c=num[a];
-console.log(c)
+console.log(c);

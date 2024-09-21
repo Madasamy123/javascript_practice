@@ -7,10 +7,17 @@
 //         sum=i+sum
 //     }
 // }console.log(sum)
+// let b=10;
+// let sum=0;
+// for(a=5;a<=b;a++){
+//     if(a%2==0)
+// sum=sum+a;
+
+// }console.log(sum)
 let b=10;
 let sum=0;
-for(a=5;a<=b;a++){
-    if(a%2==0)
-sum=sum+a;
-
+for(let a=5;a<=b;a++){
+if(a%2==0){
+    sum=sum+a;
+}
 }console.log(sum)
