@@ -1,15 +1,6 @@
 
 
-// let students_per_route = [45, 155, 130, 60, 40] // 8
-// let total_bus_route=0;
-// for(let i=0;i<students_per_route.length;i++){
-//     route_bus_count=1;
-//     if(students_per_route[i]<75) 
-//         route_bus_count++
-//     total_bus_route+=route_bus_count
-    
-// }
-// console.log(total_bus_route)
+
 
 //You are given an array of student grades. Write a function that calculates the average grade.
 
@@ -38,3 +29,5 @@ let find = integers.filter(function(a){
     return a%2==0
 })
 console.log(find.length)
+
+
