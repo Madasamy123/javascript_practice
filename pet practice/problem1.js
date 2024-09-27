@@ -3,6 +3,19 @@
 //A vowel is a character which is any of letters a, e, i, o, u. Any letter which is a not a vowel is considered
 // a consonant.
 
+function letter(vowel){
+for(let i=0;i<vowel.length;i++){
+    if(vowel=="a"||vowel=="e"||vowel=="i"||vowel=="o"||vowel=="u"||vowel=="A"||vowel=="E"||vowel=="I"||vowel=="O"||vowel=="U"){
+        console.log("The character is a vowel")
+    }
+    else {
+        console.log("The character is a consonant")
+    }
+}
+
+
+}letter("a")
+
 
 
 
@@ -39,10 +52,6 @@ for(let i=1;i<=n*2;i++){
 }
 
 
-let initialDiscount=5;
-for(let i=1;i<=initialDiscount;i++){
-    console.log(i)
-}
 
 
 
@@ -64,16 +73,14 @@ function printAllMultiplesOf5Bet(a,b){
 //Day 1: 5%
 //Day 2: 7% (5% + 2%)
 //Day 3: 9% (7% + 2%)
-function discount(initialDiscount){
-    let sum=0;
-    let n=10;
-    let dailyIncrease=2;
-    for(i=initialDiscount;i<=n;i++){
-      
-       if(i%2==0){
-        sum=initialDiscount+dailyIncrease+i
-        console.log(sum)
-       }
-    }
-    }
-    discount(5)
+
+
+function discount(initialDiscount,dailyIncrease,days){
+ for(let i=1;i<=days;i++){
+    let first=initialDiscount
+    initialDiscount+=dailyIncrease
+    console.log(first)
+ }
+
+}
+discount(5,2,10)
