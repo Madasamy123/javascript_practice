@@ -29,17 +29,8 @@
 // }
 
 let integers = [10, 30, 40, 40, 50, 20, 10, 40, 50, 70]
-let changedInteger = -1;
-for(let i=0; i<integers.length; i++){
-    for(let j=i+1; j<integers.length; j++){
-        if(integers[i] != changedInteger && integers[j] != changedInteger){
-        if(integers[i] === integers[j]){
-            integers[j] = changedInteger;
-        }
-    }
-}
-if(integers[i] != changedInteger) console.log(integers[i]);
-}
+
+
      
 
 
