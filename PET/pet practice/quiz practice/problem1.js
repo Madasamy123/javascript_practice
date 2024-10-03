@@ -83,3 +83,14 @@ function sumOfNEven(n){
     console.log(sum1)
 
 }sumOfNEven(5)
+
+//Print the sum of all  numbers between a and b. Eg, If a = 5, and b = 8 then it should print 26
+let sum3=0;
+function sum2(l,m){
+    for(let i=l;i<=m;i++){
+        sum3=sum3+i;
+       
+    }
+    console.log(sum3)
+
+}sum2(5,8)
