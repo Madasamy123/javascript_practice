@@ -10,7 +10,3 @@
 
 // }array([12,34,57,11,13])
 
-function word(value){
-
-
-}word("level")

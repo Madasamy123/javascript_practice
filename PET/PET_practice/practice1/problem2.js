@@ -23,6 +23,28 @@
 
 // }array([10,11,12,15,22])
 
-//Convert Celsius to Fahrenheit
-//Write a function that converts a temperature from Celsius to Fahrenheit.
+// accending
+
+// function array(value){
+//     value.sort(function(a,b){
+//         return a-b;
+//     })
+//     console.log(value)
+
+// }array([45,67,89,68])
+
+
+
+// reverse word
+
+// function word(a){
+// let b=a.split('').reverse().join('')
+// console.log(b)
+  
+// }word("madasamy")
+
+
+
+
+
 

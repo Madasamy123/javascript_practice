@@ -142,10 +142,36 @@
 
 //Write a function sumOfSquares that takes an array of numbers and returns the sum of the squares of each number.
 
-let numbers=[2,4,6,8,10]
-let sum=0;
-for(let i=0;i<numbers.length;i++){
-    let a=numbers[i]**2
-    sum+=a
-}
-console.log(sum)
+// let numbers=[2,4,6,8,10]
+// let sum=0;
+// for(let i=0;i<numbers.length;i++){
+//     let a=numbers[i]**2
+//     sum+=a
+// }
+// console.log(sum)
+
+//switchcase
+
+function mark(value){
+    switch (true){
+        case (value>80):
+            console.log("very good");
+            break;
+        case (value>60):
+            console.log("good");
+            break;
+        case(value>50):
+        console.log("need improvement");
+        break;
+        case(value>40):
+        console.log("extra study")
+        break;
+        default:
+
+
+    }
+    
+
+
+
+}mark(81)
