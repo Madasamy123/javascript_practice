@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+    <button id="highlight">Highlight</button>
+    <script>
+        const addbutton=document.getElementById("add");
+        addbutton.addEventListener("click",()=>{
+            const addbox=document.createElement("div");
+            addbox.textContent="madasamy";
+            addbox.classList.add("square");
+            document.body.appendChild(addbox)
+        })
+
+        const removebutton=document.getElementById("remove")
+        removebutton.addEventListener("click",()=>{
+            const removeboxbutton=document.querySelector(".square")
+            if(removeboxbutton){
+                document.body.removeChild(removeboxbutton)
+            }
+            else{
+                alert("no boxes")
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

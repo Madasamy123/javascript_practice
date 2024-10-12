@@ -1,0 +1,66 @@
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+  <h1 id="header">Hello World</h1>
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <button id="changeText">Change Text</button>
+
+<script>
+  const header=document.getElementById("header")
+  const paragraph=document.querySelectorAll("p")
+  const changetext=document.getElementById("changeText")
+  
+changetext.addEventListener("click",()=>{
+  header.textContent="maddy";
+  paragraph.forEach((first, index)=>{
+    first.textContent=`paragraphs ${index+1}changed!`
+  })
+})
+</script>
+    
+   
+ 
+</body>
+</html> 
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+  </head>
+  <body>
+    <h1 id="header">Hello World</h1>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <button onclick="maddy()">Change Text</button>
+  
+  <script>
+    const header=document.getElementById("header")
+    const paragraph=document.querySelectorAll("p")
+    
+    
+ function maddy(){
+  header.textContent="Madasamy";
+  paragraph.forEach((first, index)=>{
+    first.textContent=`paragraph ${index+1} changed`
+  })
+
+ }
+  </script>
+      
+     
+   
+  </body>
+  </html> 
+   
+ 

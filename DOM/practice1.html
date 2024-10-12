@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <!-- <div class="main">
+      <input id="first" >
+      <input id="second">
+      <button onclick="change()">Add</button>
+      <p id="result">Result</p>
+   </div>
+   <script>
+      const main=document.querySelector(".main")
+      const firstinput=document.getElementById("first")
+      const secondinput=document.getElementById("second")
+      const result=document.getElementById("result")
+      
+        
+        
+         function change(){
+            const firstvalue=Number(firstinput.value);
+         const secondvalue=Number(secondinput.value);
+         const total=firstvalue+secondvalue;
+            result.textContent=total;
+
+         }
+      
+   </script> -->
+
+
+
+   <div class="main">
+      <input id="num1">
+      <input id="num2">
+      <button id="change">total</button>
+      <p id="result">Result</p>
+
+   </div>
+   <script>
+      const main=document.querySelector(".main")
+      const change=document.getElementById("change")
+      change.addEventListener("click",()=>{
+         
+         const first=Number(num1.value)+Number(num2.value)
+         const second=document.getElementById("result")
+         second.textContent=first
+
+      })
+   </script>
+   
+</body>
+</html> 
+
+
+
+
+ 

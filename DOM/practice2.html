@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <h1>Guess the Number</h1>
+    <input id="surpriseNum">
+    <button id="check">Check</button>
+    <p id="result">Your Score Right/wrong</p>
+   
+   </div>
+   <script>
+      const surpriseNum=document.getElementById("surpriseNum")
+    const checkNum=document.getElementById("check")
+    const randomNum=Math.floor(Math.random()*10)+1
+    const result=document.getElementById("result")
+   
+    
+    check.addEventListener("click",()=>{
+       
+        const enterNum=surpriseNum.value
+        if(enterNum==randomNum){
+            console.log(result.textContent="your Score right")
+            alert("you won the game")
+
+        }
+        else{
+            
+            console.log(result.textContent="your score is wrong")
+            alert("you loss the game")
+           
+
+        }
+    })
+   </script>
+    
+</body>
+</html>

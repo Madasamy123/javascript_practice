@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        .maddy{
+            background-color: red;
+            color: blueviolet;
+            font-size: 10px;
+         
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="box">
+       
+        </div>
+        <button id="change">Change color</button>
+        
+
+        <script>
+            const box=document.getElementById("box")
+            const change=document.getElementById("change")
+            change.addEventListener("click",()=>{
+
+                 const newpara=document.createElement("h2")
+                 box.style.backgroundColor="orange    "
+                 
+                 newpara.textContent="madasamy"
+                 newpara.classList.add("maddy")
+                 box.appendChild(newpara)
+                 
+                
+               
+                change.style.backgroundColor="grey" 
+            })
+
+
+        </script>
+    
+</body>
+</html>

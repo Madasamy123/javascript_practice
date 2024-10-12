@@ -203,11 +203,18 @@
 //Capitalize the First Letter of Each Word
 
 // function letter(word){
-//     let a=word.split(' ');
-    
-//         console.log(a)
+//   //first word captial in the sentence
+// function word(a) {
+//     let b = a.split(' ')
+//     for (let i = 0; i < b.length; i++) {
+     
+//         b[i]=b[i].replace(b[i][0],b[i][0].toUpperCase())
 //     }
-    
+
+//     console.log(b)
+
+
+// } word("i am madasamy from tirunelveli")
 
 
 
@@ -229,7 +236,7 @@
 
 // }
 
-//}word("Maddy is a play boy and he is owner of software company named inge but he fall in  love with Anushka but his ex-lover mamitha baiju don't like that so she decide to kill anushka")
+// }word("Maddy is a play boy and he is owner of software company named inge but he fall in  love with Anushka but his ex-lover mamitha baiju don't like that so she decide to kill anushka")
 
 
 //fibinaosii
@@ -280,7 +287,7 @@
    
 // }compoundInterest(1000,10,10)
 
-//join number add and mul
+//join number add and mul digit
 //
 // function first(number){
 //     let a=number.toString()
@@ -312,3 +319,180 @@
 
 // }first(2022)
 
+
+//count vowels
+
+// function letter(word){
+//        let count=0;
+//        for(let i=0;i<word.length;i++){
+           
+//            if(word[i]=="a"|| word[i]=="e"|| word[i]=="i"||word[i]=="o"||word[i]=="u")
+//            count++;
+//        }
+//        console.log(count)
+       
+//    }letter("madasami")
+
+
+// practice
+
+// function practice(nam){
+//    let a=nam.length-1
+//    let str="";
+//    let b=[]
+  
+//    for(let i=a;i>=0;i--){
+//    str+=nam[i];
+//    if(nam[i]=="a"|| nam[i]=="e"||nam[i]=="i"|| nam[i]=="o"||nam[i]=="u"){
+//     b.push(nam[i])
+//   }
+ 
+//    }
+//    console.log(str)
+//    console.log(b)
+
+//    for(let i=0;i<b.length;i++){
+//     if(nam[0]==b[i]){
+//         console.log("sdf");
+//     }
+
+//     else{
+//         console.log("no word")
+//     }
+    
+//    }
+
+// } 
+// practice("madasami")
+
+
+// pallindrom
+
+// function word(nam){
+//     let str=""
+//     let a=nam.length-1;
+//     for(let i=a;i>=0;i--){
+//          str+=nam[i]
+    
+//     }
+//    if(str==nam){
+//     console.log("palindrom")
+//    }
+//    else{
+//     console.log("not palindrom")
+//    }
+
+// }word("level")
+
+//
+
+//second largest number
+
+// function value(number){
+//     let largest=0;
+//     let secondLargest=0;
+
+//     for(let i=0;i<number.length;i++){
+//         if(number[i]>largest){
+//             largest=number[i]
+           
+//         }
+       
+//     }
+//    for(let i=0;i<number.length;i++){
+//     if(number[i]>secondLargest && number[i]!==largest){
+//        secondLargest=number[i]
+//     }
+    
+//    }
+//    console.log(secondLargest)
+  
+
+// }value([10,12,65,87,84])
+
+//print star
+
+
+// function star(n){
+//       let str=""
+//     for(let i=1;i<=n;i++){
+//        str+="*"
+//        console.log(str)
+//     }
+   
+
+// }star(5)
+
+//print reverse star
+
+// function reveresStar(n){
+//     for(let i=n;n>=1;n--){
+//     let str=""
+
+//         for(let j=n;j>=1;j--){
+//             str+="*"
+//         }
+//     console.log(str)
+      
+
+//     }
+  
+// }reveresStar(5)
+
+
+//second largest
+
+// function value(number){
+//    let n=2; 
+// for(let i=0;i<n;i++){
+//  a=Math.max(...number)
+// let b=number.indexOf(a)
+// number.splice(b,1)
+// }
+// console.log(a)
+// }value([10,20,30,40,50])
+
+
+//slice
+
+// function value(nam){
+//     let b=nam.length-1
+//     let a=nam.slice(2,6)
+//     console.log(a)
+
+// }value("madasamy")
+
+///Remove Duplicates  and accending from an Array
+
+// function array(num){
+//     let a=[]
+//     for(let i=0;i<num.length;i++){
+//         if(!a.includes(num[i])){
+//             a.push(num[i])
+//             let b=a.sort(function(c,d){
+//                 return c-d
+//             })
+//             console.log(b)
+           
+//         }
+       
+//     }
+//     console.log(a)
+
+// }array([1,2,1,4,6,2,7,3,5])
+
+////compoundInterest
+
+// function compoundInterest(p,n,r){
+    
+//     let totalinterest=0;
+//     for(let i=0;i<=n;i++){
+//         totalinterest=p*r/100;
+//         p+=(p*r/100)
+//         console.log(totalinterest,p)
+       
+
+//     }
+  
+
+// }compoundInterest(1000,10,10)

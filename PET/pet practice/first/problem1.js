@@ -152,26 +152,60 @@
 
 //switchcase
 
-function mark(value){
-    switch (true){
-        case (value>80):
-            console.log("very good");
-            break;
-        case (value>60):
-            console.log("good");
-            break;
-        case(value>50):
-        console.log("need improvement");
-        break;
-        case(value>40):
-        console.log("extra study")
-        break;
-        default:
+// function mark(value){
+//     switch (true){
+//         case (value>80):
+//             console.log("very good");
+//             break;
+//         case (value>60):
+//             console.log("good");
+//             break;
+//         case(value>50):
+//         console.log("need improvement");
+//         break;
+//         case(value>40):
+//         console.log("extra study")
+//         break;
+//         default:
+       //     console.log("go to dc")
 
 
-    }
+
+//     }
     
 
 
 
-}mark(81)
+// }mark(81)
+
+// function day(num){
+//     switch(num){
+//     case 1:
+//         console.log("monday");
+//         break;
+//     case 2:
+//         console.log("tuesday");
+//         break;
+//     case 3:
+//         console.log("wednesday");
+//         break;
+//     case 4:
+//         console.log("thursday");
+//         break;
+
+//     case 5:
+//         console.log("friday");
+//         break;
+//     case 6:
+//         console.log("saturday");
+//         break;
+//     case 7:
+//         console.log("sunday");
+//         break;
+    
+//     default:
+//         console.log("invalid day")
+//     }
+
+// }day(10)
+

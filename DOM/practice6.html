@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" onkeyup="update()">
+    <button id="btn">Click</button>
+    <h1 id="result"></h1>
+    <script>
+        const input=document.getElementById("input")
+        const btn=document.getElementById("btn")
+        const result=document.getElementById("result")
+        function update(){
+            
+            result.textContent=input.value
+
+        }
+
+        btn.addEventListener("click",()=>{
+            result.textContent=input.value
+        })
+
+    </script>
+</body>
+</html>

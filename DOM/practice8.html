@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Name</h1>
+    <button id="one">Karthi</button>
+    <button id="two">Praveen</button>
+    <button id="three">John</button>
+
+    <script>
+        const head=document.getElementById("head")
+        const one=document.getElementById("one")
+        one.addEventListener("click",()=>{
+            head.textContent=one.textContent
+        })
+        const two=document.getElementById("two")
+        two.addEventListener("click",()=>{
+            head.textContent=two.textContent
+        })
+        const three=document.getElementById("three")
+        three.addEventListener("click",()=>{
+            head.textContent=three.textContent
+        })
+        
+
+    </script>
+    
+</body>
+</html>
+
+
+

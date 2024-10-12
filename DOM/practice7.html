@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <button id="btn">Add</button>
+    </div>
+    <script>
+        const main=document.querySelector(".main")
+        const btn=document.getElementById("btn")
+        btn.addEventListener("click",()=>{
+            const head=document.createElement("h1")
+            head.textContent="madasamy"
+            main.appendChild(head)
+        })
+    </script>
+    
+</body>
+</html>

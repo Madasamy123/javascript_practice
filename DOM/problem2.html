@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box-style{
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      margin: 10px;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Dom Practice</h1>
+    <button id="addbox">Add Box</button>
+    <button id="removebox" >Remove Box</button>
+
+  </div>
+
+  <script>
+    const main=document.querySelector(".main")
+    const addboxbutton=document.getElementById("addbox")
+    addboxbutton.addEventListener("click",()=>{
+      const newbox=document.createElement("div")
+      newbox.textContent="maddy"
+      newbox.classList.add("box-style");
+      main.appendChild(newbox)
+
+    })
+
+    const removeboxbutton=document.getElementById("removebox")
+    removeboxbutton.addEventListener("click",()=>{
+      const lastbox=document.querySelector(".box-style");
+      if(lastbox){
+        main.removeChild(lastbox)
+      }
+      else{
+        alert("No box in the website")
+      }
+
+    })
+
+
+    const link=document.createElement("a")
+    link.textContent="flipkar link"
+    link.setAttribute("href","https://www.flipkart.com/")
+    main.appendChild(link)
+
+
+
+
+
+  </script>
+  
+
+    
+
+  </script>
+  
+</body>
+</html>
