@@ -1,0 +1,30 @@
+<!-- 6.	Change Text Color Using querySelector -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+    <style>
+.change{
+    color: aqua;
+
+}
+
+    </style>
+ 
+</head>
+<body>
+    <p class="text">This is a sample text.</p>
+    <button id="colorChangeButton">Change Text Color</button>
+    <script>
+        const newhead=document.querySelector(".text")
+        const btn=document.getElementById("colorChangeButton")
+        btn.addEventListener("click",()=>{
+            newhead.classList.add("change")
+        })
+    </script>
+</body>
+</html>

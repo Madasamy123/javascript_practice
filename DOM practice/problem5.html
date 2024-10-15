@@ -1,0 +1,32 @@
+<!-- Change Background Color Using getElementById -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <!-- <style>
+        .change{
+            background-color: blueviolet;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 id="title">Change My Background Color</h1>
+    <button id="colorButton">Change Color</button>
+    <script>
+       
+        const btn=document.getElementById("colorButton")
+        btn.addEventListener("click",()=>{
+            const head=document.getElementById("title")
+            // head.classList.add("change")
+            head.style.backgroundColor="blueviolet"
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- Change background color. -->
