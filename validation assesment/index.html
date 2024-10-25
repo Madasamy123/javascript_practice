@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Form Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F4F4F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    span {
+      color: red;
+      font-size: 12px;
+    }
+    button {
+      padding: 10px;
+      background-color: #28A745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:disabled {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <form id="employeeForm" novalidate>
+    <h2>Employee Registration</h2>
+    <label for="name">Employee Name:</label>
+    <input type="text" id="name" name="name" >
+    <span id="nameError"></span>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" >
+    <span id="ageError"></span>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary">
+    <span id="salaryError"></span>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+
+const form=document.getElementById("employeeForm")
+const name1=document.getElementById("name")
+const nameError=document.getElementById("nameError")
+const age1=document.getElementById("age")
+const ageError=document.getElementById("ageError")
+const salary1=document.getElementById("salary")
+const salaryError=document.getElementById("salaryError")
+
+form.addEventListener("submit", function(event){
+    nameError.textContent=" ";
+    ageError.textContent=" ";
+    salaryError.textContent="";
+
+  if(name1.value<3 && name1.value<30){
+    
+    
+  }
+  else{
+   nameError.textContent="Name must be between 3 and 30"
+  }
+  event.preventDefault()
+
+  if(age1.value>19 && age1.value<59){
+    
+
+  }
+  else{
+    ageError.textContent="Age must be between 19 and 59"
+
+  }
+  event.preventDefault()
+
+  if(salary1.value>10000 && salary1.value<50000){
+
+  }
+  else {
+    salaryError.textContent="Salary must be between 10000 and 50000"
+  }
+
+    
+})
+
+
+
+  </script>
+</body>
+</html>

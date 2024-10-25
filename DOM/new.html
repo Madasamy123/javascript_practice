@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .samy{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        .fresh{
+            color: brown;
+            background-color: aqua;
+            transition: ws;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="head">Welcome</h1>
+        <button id="addbox">Add</button>
+        <button id="removebox">Remove</button>
+        <button id="highbox">Highlight</button>
+
+    </div>
+    <script>
+        const main=document.querySelector(".main")
+        const head=document.getElementById("head")
+        const addboxbutton=document.getElementById("addbox")
+        addboxbutton.addEventListener("click",()=>{
+            head.textContent="The Academy"
+           
+            const newdiv=document.createElement("div")
+            newdiv.textContent="maddy"
+            newdiv.classList.add("samy")
+            document.body.appendChild(newdiv)
+        })
+
+
+
+    const removeboxbutton=document.getElementById("removebox")
+    removeboxbutton.addEventListener("click",()=>{
+        const removebutton=document.querySelector(".samy")
+        if(removebutton){
+            document.body.removeChild(removebutton)
+        }
+        else{
+            alert("no boxes")
+        }
+
+    })
+
+    const highlibtn=document.getElementById("highbox")
+    highlibtn.addEventListener("click",()=>{
+        head.textContent="Freshword"
+        head.classList.add("fresh")
+        document.body.appendChild(head)
+    })
+    </script>
+    
+</body>
+</html>

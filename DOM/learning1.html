@@ -11,9 +11,17 @@
             background-color: aqua;
             margin: 10px;
         }
+
+        .heading{
+            background-color: aqua;
+            height: 50px;
+            color: brown;
+            transition: 2s;
+        }
     </style>
 </head>
 <body>
+    <h1 id="head">Welcome</h1>
     <button id="add">Add</button>
     <button id="remove">Remove</button>
     <button id="highlight">Highlight</button>
@@ -36,6 +44,16 @@
                 alert("no boxes")
             }
         })
+
+        const head=document.getElementById("head")
+        const highlibtn=document.getElementById("highlight")
+        highlibtn.addEventListener("click",()=>{
+            head.textContent="Maddy"
+            head.classList.add("heading")
+
+        })
+
+
 
     </script>
     

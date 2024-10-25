@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Welcome to my page</h1>
+       
+        <button class="change">change</button>
+    </div>
+    <script>
+        const main=document.querySelector(".container")
+        const header=document.getElementById("heading")
+        const button=document.getElementsByClassName("change")
+        alert(header.textContent)
+        button[0].addEventListener("click",()=>{
+            alert(header.textContent)
+        })
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>

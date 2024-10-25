@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Test</title>
+  <style>
+    .box-style {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">DOM Manipulation Test</h1>
+    <button id="addBox">Add Box</button>
+    <button id="removeBox">Remove Box</button>
+    <button id="showBoxCount">Show Box Count</button>
+    <button id="link">Hi There</button>
+   
+    
+  </div>
+  <script>
+      const container=document.querySelector(".container")
+    const addbox=document.getElementById("addBox")
+    addbox.addEventListener("click",()=>{
+        const addboxbutton=document.createElement("div")
+        addboxbutton.textContent="newbox";
+        addboxbutton.classList.add("box-style")
+        container.appendChild(addboxbutton)
+    })
+
+    const removbox=document.getElementById("removeBox")
+    removbox.addEventListener("click",()=>{
+        const removeboxbutton=document.querySelector(".box-style")
+        if(removeboxbutton){
+            container.removeChild(removeboxbutton)
+            alert( `removeboxbutton+1`+"${index+1}")
+        }
+        
+     
+    })
+
+
+
+
+
+const linktag=document.getElementById("link")
+linktag.addEventListener("click",()=>{
+  const link=document.createElement("a")
+link.textContent="Hi There"
+link.setAttribute("href","https://www.flipkart.com/")
+container.appendChild(link)
+
+})
+
+const showbox=document.getElementById("showBoxCount")
+showbox.addEventListener("click",()=>{
+  alert( `removeboxbutton+1`+"${index+1}")
+
+})
+
+
+
+
+
+
+</script>
+
+  
+ 
+  
+
+
+
+
+
+
+
+
+  <!-- 1. Show alert of the text content of the h1 element using class -->
+  <!-- 2. Create a new div and append the child to the container, with the text content New Box-->
+  <!-- 3. Show the number of boxes in an alert -->
+  <!-- 4. Create an <a> element on button click , with text content "Hi There" and set href -->
+</body>
+</html>
