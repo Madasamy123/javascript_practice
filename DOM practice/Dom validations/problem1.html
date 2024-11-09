@@ -1,18 +1,33 @@
-<form id="myForm">
-    <input type="text" id="username" required>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <input type="text" id="username">
     <span id="usernameError"></span>
     <button type="submit">Submit</button>
   </form>
-  
+
   <script>
     const form = document.getElementById("myForm");
-    const username = document.getElementById("username");
+    const username = document.getElementById("username")?.value || '';
     const usernameError = document.getElementById("usernameError");
-  
-    form.addEventListener("submit", function(event) {
-      if (!username.checkValidity()) {
+
+    form.addEventListener("submit", function (event) {
+     
+      // console.log('userName : ', username)
+      if (!username?.trim()) {
         usernameError.textContent = "Username is required!";
         event.preventDefault();
       }
     });
   </script>
+</body>
+
+</html>

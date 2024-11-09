@@ -10,7 +10,7 @@ function numbers(n){
         }
        }
     for(let i=0;i<n.length;i++){
-        if(larges>n[i] && secondLargest>largest){
+        if(largest>n[i] && secondLargest>largest){
             secondLargest=largest
         }
     }

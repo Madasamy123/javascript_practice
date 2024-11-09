@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2 id="heading">Cm to inches</h2>
+        <input type="text" id="input" placeholder="write the value">
+        <button onclick="convert()">change</button>
+        <span id="result" ></span>
+        <script>
+            function convert(){
+            const value1=Number(document.getElementById("input").value)
+            const value2=value1/2.54;
+            const result=document.getElementById("result")
+            result.innerHTML=value2.toFixed(2)
+    
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
