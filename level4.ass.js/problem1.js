@@ -17,6 +17,7 @@ function cart(arr) {
     let total = 0;
     for (let i = 0; i < arr.length; i++) {
         const splArr = arr[i].split(' ');
+        console.log(splArr)
         switch (splArr[0]) {
             case 'M':
                 total += Number(splArr[1]) * 500
@@ -36,6 +37,7 @@ function cart(arr) {
         }
    
     }
+   
      console.log(total)
 
 

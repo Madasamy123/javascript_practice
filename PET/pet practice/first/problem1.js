@@ -122,21 +122,8 @@
   
 // }fibonacci(10)
 
-//Sum of Prime Numbers in an Array
 
-//Write a function sumPrimeNumbers that takes an array of numbers and returns the sum of all prime numbers 
-//in the array.
 
-// let array=[11,24,37,27,19,82]
-// let sum=0;
-
-// for(let i=0;i<array.length;i++){
-//     if(array[i]%1==0 && array[i]%2!==0 && array[i]%3!==0 && array[i]%4!==0 && array[i]%5!==0 && array[i]%7!==0){
-//         sum=sum+array[i]
-       
-//     }
-  
-// } console.log(sum)
 
 //Sum of Squares of Numbers in an Array
 
