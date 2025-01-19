@@ -1,26 +1,22 @@
 function selectsort(arr){
 
-for(let i=0;i<arr.length;i++){
+for(let i=0;i<arr.length-1;i++){
     let min=i;
-   
     for(let j=i+1;j<arr.length;j++){
         if(arr[min]>arr[j]){
             min=j
         }
-       
-
-
-       
     }
+    console.log(arr.join(" "))
+
     if(min!==i){
-        let temp=arr[min]
-        arr[min]=arr[i]
-        arr[i]=temp
+        [arr[min],arr[i]]=[arr[i],[arr[min]]]
+
     }
-   
 }
-console.log(arr)
+console.log(arr.join(" "))
 
 
 
-}selectsort([9,62,6,3,23,16])
+}selectsort([29, 10, 14, 37, 11])
+

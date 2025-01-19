@@ -17,4 +17,4 @@ function shellsort(arr){
    }
    console.log(arr)
 
-}shellsort([63,87,23,9,21,87])
+}shellsort([63,87,23,9,21,88])
