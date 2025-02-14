@@ -24,4 +24,4 @@ function findmax(arr){
      
     }
     console.log(a)
-}findmax([1,2,5,4,5,6,7,8,1,3,3,3,5,5,5,3])
+}findmax([1,2,5,4,5,6,7,8,1,3,3,3,5,5,5,3,3,3])

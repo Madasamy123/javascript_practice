@@ -10,7 +10,7 @@ for(let i=0;i<arr.length-1;i++){
     console.log(arr.join(" "))
 
     if(min!==i){
-        [arr[min],arr[i]]=[arr[i],[arr[min]]]
+        [arr[min],arr[i]]=[arr[i],arr[min]]
 
     }
 }
