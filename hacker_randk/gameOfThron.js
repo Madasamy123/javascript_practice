@@ -12,6 +12,8 @@ function anagramPallindrom(s){
         }
     }
 
+    console.log(obj);
+    
     var count=0;
 
     for(let ans in obj){
