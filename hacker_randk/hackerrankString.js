@@ -12,9 +12,6 @@ function hackerrankInString(s) {
             
            
         }
-
-
-       
         if(j===target.length){
             return "YES";
         }
