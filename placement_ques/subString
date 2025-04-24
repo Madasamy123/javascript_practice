@@ -1,0 +1,26 @@
+
+let a = "abcaabcdef";
+let count=0;
+
+let str="";
+for(let i=0;i<a.length;i++){
+    let substr="";
+    substr+=a[i];
+    for(let j=i+1;j<a.length;j++){
+        if(!substr.includes(a[j])){
+            substr+=a[j];
+           
+            // console.log(substr)
+           
+        }
+        else{
+            break;
+        }
+}
+
+    if(count<substr.length){
+        count=substr.length;
+        str=substr
+    }
+}
+console.log(count,str);
